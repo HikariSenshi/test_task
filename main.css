@@ -1,0 +1,99 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Roboto', arial;
+    background-color: #f5f5f5;
+}
+
+.header {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,.5);
+    background-color: white;
+    color: #333;
+}
+
+.content {
+    height: calc(100% - 80px);
+    display: flex;
+    flex-direction: row;
+}
+
+.left-bar {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0 0 25px;
+}
+
+.left-bar span {
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.5);
+    background-color: white;
+}
+
+.left-bar span:hover, .main-bar__content .btn:hover {
+    background-color: #f5f5f5;
+}
+
+.main-bar {
+    flex-grow: 15;
+    padding: 25px 25px 0 25px;
+}
+
+.main-bar__content {
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.5);
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.main-bar__content .field {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    height: 80%;
+}
+
+.main-bar__content .field textarea {
+    height: 100%
+}
+
+.main-bar__content .field label {
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.main-bar__content .field label:first-child {
+    margin-top: 0;
+}
+
+.main-bar__content .field.answer {
+    flex-grow: 2;
+    height: 30%;
+}
+
+.main-bar__content .btn {
+    margin: 0 20px;
+    height: 50px;
+    border-radius: 100px;
+    border: none;
+    width: 50px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.5);
+    background: white;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+}
